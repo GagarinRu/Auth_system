@@ -1,0 +1,16 @@
+.DS_Store
+*.pyc
+.cursor/
+.ruff_cache
+.gigaide/
+*.geany
+venv/
+**/static/profile/*.*
+/base/languages/
+**/static/admin
+*/__pycache__/
+env
+.env
+.vscode/
+.coverage
+db.sqlite3
