@@ -1,16 +1,64 @@
-.DS_Store
+# Python
 *.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+env/
+ENV/
+.ruff_cache/
+
+# IDE
 .cursor/
-.ruff_cache
 .gigaide/
 *.geany
-venv/
-**/static/profile/*.*
-/base/languages/
-**/static/admin
-*/__pycache__/
-env
-.env
 .vscode/
-.coverage
+.idea/
+*.swp
+*.swo
+
+# Django
+*.log
+local_settings.py
 db.sqlite3
+db.sqlite3-journal
+/static/
+/media/
+
+# Docker
+.docker/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
+*.cover
+
+# Testing
+.pytest_cache/
+.coverage
