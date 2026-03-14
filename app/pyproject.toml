@@ -1,0 +1,51 @@
+[project]
+name = "test_effective_mobile"
+version = "0.0.1"
+description = "Backend-приложение – собственная система аутентификации и авторизации с доступами."
+authors = [
+    "Никита Шидогубов"
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bcrypt>=4.3.0",
+    "cryptography>=45.0.7",
+    "django>=4.2",
+    "djangorestframework>=3.16.1",
+    "drf-spectacular>=0.28.0",
+    "gunicorn>=23.0.0",
+    "pre-commit>=4.5.1",
+    "psycopg2-binary>=2.9.10",
+    "pyjwt>=2.10.1",
+    "python-dotenv>=1.1.1",
+    "ruff>=0.15.1",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.ruff]
+line-length = 119
+exclude = [
+    ".git",
+    ".gitignore",
+    "__pycache__",
+    "__init__.py",
+    "manage.py",
+    "poetry.lock",
+    "pyproject.toml",
+    "migrations",
+    "tests.py",
+]
+target-version = "py312"
+fix = true
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.ruff.lint]
+ignore = ["E501", "W293"]
+select = ["E", "F", "I", "B", "C", "A", "N", "UP"]
+mccabe.max-complexity = 12
